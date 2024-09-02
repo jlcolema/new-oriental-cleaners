@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>New Oriental Cleaners Blog</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="new, oriental, cleaners" />
+	<meta name="author" content="Saucepan Creative" />
+
+	<link type="text/css" href="css/screen.css" rel="stylesheet" media="screen" />
+	<link type="text/css" href="css/print.css" rel="stylesheet" media="print" />
+	<link rel="shortcut icon" type="image/ico" href="media/favicon.ico" />
+
+	<script type="text/javascript" src="script/jquery.js"></script>
+
+	<!-- Weather -->
+
+	<script type="text/javascript" src="script/weather.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$.simpleWeather({
+				location: 'nassau, the bahamas',
+				unit: 'f',
+				success: function(weather) {
+					$("#temperature").append('<p><strong>Current Temp</strong>: '+weather.temp+'&deg; '+weather.units.temp+'</p>');
+				},
+				error: function(error) {
+					$("#temperature").html('<p>'+error+'</p>');
+				}
+			});
+		});
+	</script>
+
+</head>
+
+<body class="blog">
+
+<div class="group" id="page">
+
+	<!-- Header -->
+
+	<div id="header">
+
+		<h1><a href="index.html" title="New Oriental Cleaners">New Oriental Cleaners</a></h1>
+
+		<ul id="navigation">
+			<li id="about"><a href="about-us.html" title="About Us">About Us</a></li>
+			<li id="staff"><a href="our-staff.html" title="Our Staff">Our Staff</a></li>
+			<li id="locations"><a href="locations.html" title="Locations">Locations</a></li>
+			<li id="blog"><a href="blog.html" title="Blog">Blog</a></li>
+			<li id="contact"><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
+		</ul>
+
+	</div>
+
+	<!-- Social Media -->
+
+	<div id="social-media">
+
+		<p><em>Stay in Touch on</em></p>
+
+		<ul>
+			<li id="facebook"><a href="#" title="Like Us on Facebook"><em>Like Us</em> on Facebook</a></li>
+			<li id="twitter"><a href="#" title="Follow Us on Twitter"><em>Follow Us</em> on Twitter</a></li>
+			<li id="forward"><a href="#" title="Forward to a Friend">Forward to a Friend</a></li>
+			<li id="rss"><a href="#" title="RSS">RSS</a></li>
+		</ul>
+
+	</div>
+
+	<!-- Utilities -->
+
+	<div id="utilities">
+
+		<ul id="status">
+			<li><a href="#" title=""><b>Status</b></a></li>
+			<li><a href="#" title=""><b>Status</b></a></li>
+			<li class="last"><a href="#" title=""><b>Status</b></a></li>
+		</ul>
+
+		<p id="temperature"><b>Temp:</b> <a href="#" title="Temperature"><b>85</b></a></p>
+
+	</div>
+
+	<!-- Promotion -->
+
+	<div id="promotion">
+
+		<p><a href="http://www.aoecleaners.com/" title="Winner of the 2010 Award of Excellence">Winner of the <em>2010 Award of Excellence</em></a></p>
+
+	</div>
+
+	<!-- Body -->
+
+	<div id="body">
+
+		<h2>Blog</h2>
+
+		<div class="content">
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet elit sed dolor iaculis pulvinar et sed lectus. Donec vel mauris quis turpis sodales condimentum vel a metus. Donec aliquet, felis vulputate elementum interdum, diam purus suscipit leo, at tempus nulla nibh ac risus. Nullam pellentesque orci et mauris congue et viverra tortor porttitor. Etiam eget magna sit amet massa condimentum pharetra sed quis urna. Curabitur vestibulum pulvinar faucibus. In hac habitasse platea dictumst. Aenean sagittis tempor tincidunt. Nulla dapibus dolor nec ante tempus placerat. Nam iaculis lacus nec lacus hendrerit a mattis leo blandit.</p>
+	
+			<p>Lorem ipsum dolor sit amet, <a href="#" title="">consectetur</a> adipiscing elit. Proin sit amet elit sed dolor iaculis pulvinar et sed lectus. Donec vel mauris quis turpis sodales condimentum vel a metus. Donec aliquet, felis vulputate elementum interdum, diam purus suscipit leo, at tempus nulla nibh ac risus.</p>
+	
+			<h3>Title</h3>
+	
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet elit sed dolor iaculis pulvinar et sed lectus. Donec vel mauris quis turpis sodales condimentum vel a metus. Donec aliquet, felis vulputate elementum interdum, diam purus suscipit leo, at tempus nulla nibh ac risus. Nullam pellentesque orci et mauris congue et viverra tortor porttitor. Etiam eget magna sit amet massa condimentum pharetra sed quis urna.</p>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- Footer -->
+
+<div id="footer">
+
+	<div id="footer-inner">
+
+		<div id="testimonials">
+
+			<h4><a href="#" title="Testimonials">Testimonials</a></h4>
+
+			<p>Lorem ipsum dolor sit amet, adipiscing elit. Maecenas dictum, magna ac porta convallis, mi erat dolor. <cite>Customer Name</cite></p>
+
+		</div>
+
+		<p id="copyright">Copyright &copy; 2010, New Oriental Cleaners.</p>
+
+	</div>
+
+</div>
+
+</body>
+
+</html>
